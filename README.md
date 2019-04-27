@@ -1,10 +1,13 @@
 # Fyle-Frontend-Assignment
 An interactive frontend template for subscription monthly or annually
 
-## Files And Folders
+## Files
 index.html -> the main html template to open <br/>
 style.css -> the main css file <br/>
 process.php -> a php file to submit any feedback or message <br/>
+Video of Template Flow.mp4 -> a video showing the working of the template <br/>
+
+# Folders
 css folder -> additional stylesheets <br/>
 js folder -> additional javascript files and vendor files <br/>
 images folder -> all the images used in the template <br/>
