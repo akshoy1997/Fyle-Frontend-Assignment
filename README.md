@@ -6,7 +6,7 @@ index.html -> the main html template to open <br/>
 style.css -> the main css file <br/>
 process.php -> a php file to submit any feedback or message <br/>
 Video of Template Flow.mp4 -> a video showing the working of the template <br/>
-Readme.MD -> instructions and information of the repository
+README.md -> instructions and information of the repository
 
 # Folders
 css folder -> additional stylesheets <br/>
