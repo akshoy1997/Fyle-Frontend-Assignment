@@ -1,0 +1,540 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Web Development Assignment</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style>
+		.switch {
+		  position: relative;
+		  display: inline-block;
+		  width: 60px;
+		  height: 34px;
+		}
+
+		.switch input { 
+		  opacity: 0;
+		  width: 0;
+		  height: 0;
+		}
+
+		.slider {
+		  position: absolute;
+		  cursor: pointer;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background-color: #2196F3;
+		  -webkit-transition: .4s;
+		  transition: .4s;
+		}
+
+		.slider:before {
+		  position: absolute;
+		  content: "";
+		  height: 26px;
+		  width: 26px;
+		  left: 4px;
+		  bottom: 4px;
+		  background-color: white;
+		  -webkit-transition: .4s;
+		  transition: .4s;
+		}
+
+		input:checked + .slider {
+		  background-color: #2196F3;
+		}
+
+		input:focus + .slider {
+		  box-shadow: 0 0 1px #2196F3;
+		}
+
+		input:checked + .slider:before {
+		  -webkit-transform: translateX(26px);
+		  -ms-transform: translateX(26px);
+		  transform: translateX(26px);
+		}
+
+		/* Rounded sliders */
+		.slider.round {
+		  border-radius: 34px;
+		}
+
+		.slider.round:before {
+		  border-radius: 50%;
+		}
+	</style>
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	<script>
+		window.onload = function(){
+			document.getElementById('twenty-five').onclick = function() {
+				if (document.getElementById('lollipop')!=null){
+					document.getElementById('lollipop').innerHTML = '<font size="+3"><b>$25</b></font></br><i style="color: #8B8E91;">Per month</i><br/><b>For 25 serving</b>';
+				}
+				if (document.getElementById('icecandy')!=null){
+					document.getElementById('icecandy').innerHTML = '<font size="+3"><b>$50</b></font></br><i style="color: #8B8E91;">Per month</i><br/><b>For 25 serving</b>';
+				}
+				if (document.getElementById('difference')!=null){
+					document.getElementById('difference').innerHTML = '<font size="+3"><b>$25</b></font></br><i style="color: #8B8E91;">Per month</i>';
+				}
+				if (document.getElementById('lollipop2')!=null){
+					document.getElementById('lollipop2').innerHTML = '<font size="+3"><b>$150</b></font></br><i style="color: #8B8E91;">Per annum</i><br/><b>For 25 serving</b>';
+				}
+				if (document.getElementById('icecandy2')!=null){
+					document.getElementById('icecandy2').innerHTML = '<font size="+3"><b>$300</b></font></br><i style="color: #8B8E91;">Per annum</i><br/><b>For 25 serving</b>';
+				}
+				if (document.getElementById('difference2')!=null){
+					document.getElementById('difference2').innerHTML = '<font size="+3"><b>$150</b></font></br><i style="color: #8B8E91;">Per annum</i>';
+				}
+				console.log('<p>$100 per month <br/> For 100 serving');
+			}
+		
+			document.getElementById('fifty').onclick = function() {
+				if (document.getElementById('lollipop')!=null){
+					document.getElementById('lollipop').innerHTML = '<font size="+3"><b>$50</b></font></br><i style="color: #8B8E91;">Per month</i><br/><b>For 50 serving</b>';
+				}
+				if (document.getElementById('icecandy')!=null){
+					document.getElementById('icecandy').innerHTML = '<font size="+3"><b>$100</b></font></br><i style="color: #8B8E91;">Per month</i><br/><b>For 50 serving</b>';
+				}
+				if (document.getElementById('difference')!=null){
+					document.getElementById('difference').innerHTML = '<font size="+3"><b>$50</b></font></br><i style="color: #8B8E91;">Per month</i>';
+				}
+				if (document.getElementById('lollipop2')!=null){
+					document.getElementById('lollipop2').innerHTML = '<font size="+3"><b>$300</b></font></br><i style="color: #8B8E91;">Per annum</i><br/><b>For 50 serving</b>';
+				}
+				if (document.getElementById('icecandy2')!=null){
+					document.getElementById('icecandy2').innerHTML = '<font size="+3"><b>$600</b></font></br><i style="color: #8B8E91;">Per annum</i><br/><b>For 50 serving</b>';
+				}
+				if (document.getElementById('difference2')!=null){
+					document.getElementById('difference2').innerHTML = '<font size="+3"><b>$300</b></font></br><i style="color: #8B8E91;">Per annum</i>';
+				}
+				console.log('<p>$100 per month <br/> For 100 serving');
+			}
+		
+			document.getElementById('hundred').onclick = function() {
+				if (document.getElementById('lollipop')!=null){
+					document.getElementById('lollipop').innerHTML = '<font size="+3"><b>$100</b></font></br><i style="color: #8B8E91;">Per month</i><br/><b>For 100 serving</b>';
+				}
+				if (document.getElementById('icecandy')!=null){
+					document.getElementById('icecandy').innerHTML = '<font size="+3"><b>$200</b></font></br><i style="color: #8B8E91;">Per month</i><br/><b>For 100 serving</b>';
+				}
+				if (document.getElementById('difference')!=null){
+					document.getElementById('difference').innerHTML = '<font size="+3"><b>$100</b></font></br><i style="color: #8B8E91;">Per month</i>';
+				}
+				if (document.getElementById('lollipop2')!=null){
+					document.getElementById('lollipop2').innerHTML = '<font size="+3"><b>$600</b></font></br><i style="color: #8B8E91;">Per annum</i><br/><b>For 100 serving</b>';
+				}
+				if (document.getElementById('icecandy2')!=null){
+					document.getElementById('icecandy2').innerHTML = '<font size="+3"><b>$1200</b></font></br><i style="color: #8B8E91;">Per annum</i><br/><b>For 100 serving</b>';
+				}
+				if (document.getElementById('difference2')!=null){
+					document.getElementById('difference2').innerHTML = '<font size="+3"><b>$600</b></font></br><i style="color: #8B8E91;">Per annum</i>';
+				}
+				console.log('<p>$100 per month <br/> For 100 serving');
+			}
+			
+			document.getElementById('two-hundred').onclick = function() {
+				if (document.getElementById('lollipop')!=null){
+					document.getElementById('lollipop').innerHTML = '<font size="+3"><b>$200</b></font></br><i style="color: #8B8E91;">Per month</i><br/><b>For 200 serving</b>';
+				}
+				if (document.getElementById('icecandy')!=null){
+					document.getElementById('icecandy').innerHTML = '<font size="+3"><b>$400</b></font></br><i style="color: #8B8E91;">Per month</i><br/><b>For 200 serving</b>';
+				}
+				if (document.getElementById('difference')!=null){
+					document.getElementById('difference').innerHTML = '<font size="+3"><b>$200</b></font></br><i style="color: #8B8E91;">Per month</i>';
+				}
+				if (document.getElementById('lollipop2')!=null){
+					document.getElementById('lollipop2').innerHTML = '<font size="+3"><b>$1200</b></font></br><i style="color: #8B8E91;">Per annum</i><br/><b>For 200 serving</b>';
+				}
+				if (document.getElementById('icecandy2')!=null){
+					document.getElementById('icecandy2').innerHTML = '<font size="+3"><b>$2400</b></font></br><i style="color: #8B8E91;">Per annum</i><br/><b>For 200 serving</b>';
+				}
+				if (document.getElementById('difference2')!=null){
+					document.getElementById('difference2').innerHTML = '<font size="+3"><b>$1200</b></font></br><i style="color: #8B8E91;">Per annum</i>';
+				}
+				console.log('<p>$100 per month <br/> For 100 serving');
+			}
+			
+			document.getElementById('switch').onclick = function() {
+				if (document.getElementById('lollipop2')==null){
+					document.getElementById('lollipop').id = 'lollipop2';
+					document.getElementById('lollipop2').innerHTML = '';
+				}
+				if (document.getElementById('icecandy2')==null){
+					document.getElementById('icecandy').id = 'icecandy2';
+					document.getElementById('icecandy2').innerHTML = '';
+				}
+				if (document.getElementById('difference2')==null){
+					document.getElementById('difference').id = 'difference2';
+					document.getElementById('difference2').innerHTML = '';
+				}
+				if (document.getElementById('lollipop')==null && document.getElementById('lollipop2').innerHTML!=''){
+					document.getElementById('lollipop2').id = 'lollipop';
+					document.getElementById('lollipop').innerHTML = '';
+				}
+				if (document.getElementById('icecandy')==null && document.getElementById('icecandy2').innerHTML!=''){
+					document.getElementById('icecandy2').id = 'icecandy';
+					document.getElementById('icecandy').innerHTML = '';
+				}
+				if (document.getElementById('difference')==null && document.getElementById('difference2').innerHTML!=''){
+					document.getElementById('difference2').id = 'difference';
+					document.getElementById('difference').innerHTML = '';
+				}
+				
+				
+				
+				console.log('<p>$100 per month <br/> For 100 serving');
+			}
+		}
+    </script>
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#primary-menu">
+
+    <div class="preloader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+    <!--Mainmenu-area-->
+    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
+        <div class="container">
+            <!--Logo-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand logo">
+                    <h2>Marvel UI</h2>
+                </a>
+            </div>
+            <!--Logo/-->
+            <nav class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home-page">Home</a></li>
+                    <li><a href="#feature-page">Features</a></li>
+                    <li><a href="#price-page">Pricing</a></li>
+                    <li><a href="#team-page">Review</a></li>
+                    <li><a href="#contact-page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Mainmenu-area/-->
+
+
+
+    <!--Header-area-->
+    <header class="header-area overlay full-height relative v-center" id="home-page">
+        <div class="absolute anlge-bg"></div>
+        <div class="container">
+            <div class="row v-center" style="margin-left:8%">
+                <div class="col-xs-12 col-md-7 header-text">
+                    <h2>Looking for a <br/>lollipop alternative?</h2>
+                    <p>Lorem ipsum is simply dummy text of the printing and typesetting <br/>industry. Lorem ipsum has been the industry's standard dummy <br/>text ever since the 1500s.</p>
+                    <a href="#" class="button white">Primary CTA</a>&nbsp &nbsp 
+					<a href="#" class="button white">Secondary CTA</a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-5 text-right">
+                    <img src="images/suitcase.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header-area/-->
+
+    <section class="gray-bg section-padding" id="feature-page">
+        <div class="container" style="background-image: url('../images/BG.png');">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div>
+                        <h2>This is a heading in <br/>two lines</h2><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <img src="images/table.png" style="margin-left:19%;" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="price-area overlay section-padding" id="price-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div>
+                        <h2>Compare Pricing today!</h2>
+                        <p style="color: #8B8E91;">Lorem ipsum is simply dummy text of the printing and typesetting.</p><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-left:24%;">
+                <div class="col-xs-12 col-sm-2">
+                    <div>
+                        <button class="btn btn-primary" id="twenty-five" type="button"><font size="+1"><b>25 servings</b></font></button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <div>
+                        <button class="btn btn-primary" id="fifty" type="button"><font size="+1"><b>50 servings</b></font></button>
+                    </div>
+                </div>
+                 <div class="col-xs-12 col-sm-2">
+                    <div>
+                        <button class="btn btn-primary" id="hundred" type="button"><font size="+1"><b>100 servings</b></font></button>
+                    </div>
+                </div>
+				<div class="col-xs-12 col-sm-3">
+                    <div>
+                        <button class="btn btn-primary" id="two-hundred" type="button"><font size="+1"><b>200 servings</b></font></button>
+                    </div>
+                </div>
+            </div><br/>
+			
+			<div class="row" style="margin-left:36%;">
+				<div class="col-xs-12 col-sm-2">
+					<font size="+1"><b><p>Annual</b></font><br/>
+					&nbsp <font color="#8B8E91">50% off</font></p>
+				</div>
+				<div class="col-xs-12 col-sm-2">
+					<label class="switch">
+					  <input id="switch" type="checkbox" checked>
+					  <span class="slider round"></span>
+					</label>
+				</div>
+				<div class="col-xs-12 col-sm-1">
+					<font size="+1"><b><p>Monthly</p></b></font>
+				</div>
+			</div></br>
+			
+			<div class="row" style="margin-left:20%">
+                <div class="col-xs-12 col-sm-3">
+                    <div class="price-table">
+                        <font size="+1"><b><p>lollipop</p></b></font>
+                        <hr>
+						<div id="lollipop">
+						</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <div class="price-table">
+                        <font size="+1"><b><p>Icecandy</p></b></font>
+                        <hr>
+						<div id="icecandy">
+						</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <div class="price-table active">
+                        <font size="+1"><b><p>Your savings <br/>with lollipop</p></b></font>
+                        <hr>
+						<div id="difference">
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-area section-padding gray-bg overlay" id="team-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-7 col-sm-offset-2 text-center" style="margin-left:22%">
+                    <div>
+                        <h2>Here's what our customers have to say</h2><br/><br/><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-left:25%;">
+				<div class="testimonials">
+                    <div class="testimonial">
+						<div class="col-xs-12 col-sm-3">
+							<img style="border-radius:96px" src="images/team1.jpg">
+						</div>
+						<div class="col-xs-12 col-sm-6" style="text-align:left;">
+							<p><i>Lorem ipsum is simply dummy text of the <br/>printing and typesetting industry. Lorem ipsum <br/>has been the industry's standard dummy text <br/>ever since the 1500s.</i><p> 
+							<br/><h4>Raja Ram<br/></h4><font size="+1">Tip World</font>
+						</div>
+					</div>
+					<div class="testimonial">
+						<div class="col-xs-12 col-sm-3">
+							<img style="border-radius:96px" src="images/team1.jpg">
+						</div>
+						<div class="col-xs-12 col-sm-6" style="text-align:left;">
+							<p><i>Lorem ipsum is simply dummy text of the <br/>printing and typesetting industry. Lorem ipsum <br/>has been the industry's standard dummy text <br/>ever since the 1500s.</i><p> 
+							<br/><h4>Raja Ram<br/></h4><font size="+1">Tip World</font>
+						</div>
+					</div>
+					<div class="testimonial">
+						<div class="col-xs-12 col-sm-3">
+							<img style="border-radius:96px" src="images/team1.jpg">
+						</div>
+						<div class="col-xs-12 col-sm-6" style="text-align:left;">
+							<p><i>Lorem ipsum is simply dummy text of the <br/>printing and typesetting industry. Lorem ipsum <br/>has been the industry's standard dummy text <br/>ever since the 1500s.</i><p> 
+							<br/><h4>Raja Ram<br/></h4><font size="+1">Tip World</font>
+						</div>
+					</div>
+					<div class="testimonial">
+						<div class="col-xs-12 col-sm-3">
+							<img style="border-radius:96px" src="images/team1.jpg">
+						</div>
+						<div class="col-xs-12 col-sm-6" style="text-align:left;">
+							<p><i>Lorem ipsum is simply dummy text of the <br/>printing and typesetting industry. Lorem ipsum <br/>has been the industry's standard dummy text <br/>ever since the 1500s.</i><p> 
+							<br/><h4>Raja Ram<br/></h4><font size="+1">Tip World</font>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </section>
+	
+	<section class="header-area overlay full-height relative v-center">
+        <div class="container">
+            <div class="row v-center" style="margin-left:15%">
+                <div class="col-xs-12 col-md-6 header-text">
+                    <h2>Loved by users, <br/>recommended by experts</h2>
+                    <p>Lorem ipsum is simply dummy text of the printing <br/>and typesetting industry. Lorem ipsum has been the <br/>industry's standard dummy text ever since the <br/>1500s.</p>
+                    <a href="#" class="button white">Primary CTA</a>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-5 text-right">
+                    <img src="images/suitcase.png" alt="">
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer-area relative sky-bg" id="contact-page">
+        <div class="absolute footer-bg"></div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                        <div>
+                            <h2>Contact with us</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p><br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <address class="side-icon-boxes">
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/location-arrow.png" alt="">
+                                </div>
+                                <p><strong>Address: </strong> JCB Hall Of Residence <br/>IIT Kharagpur</p>
+                            </div>
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/phone-arrow.png" alt="">
+                                </div>
+                                <p><strong>Telephone: </strong>
+                                    <a href="callto:918876168447">+918876168447</a><br />
+                                    <a href="callto:917430977333">+917430977333</a>
+                                </p>
+                            </div>
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/mail-arrow.png" alt="">
+                                </div>
+                                <p><strong>E-mail: </strong>
+                                    <a href="mailto:youremail@example.com">akshay.dakshana16@gmail.com</a> <br />
+                                    <a href="mailto:youremail@example.com">akyd.97iitjee@gmail.com</a>
+                                </p>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        <form action="process.php" id="contact-form" method="post" class="contact-form">
+                            <div class="form-double">
+                                <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
+                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
+                            </div>
+                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
+                            <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
+                            <button type="sibmit" class="button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 pull-right">
+                        <ul class="social-menu text-right x-left">
+                            <li><a href="https://www.facebook.com/akshay.deuri.75"><i class="ti-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/akshoy_1997"><i class="ti-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/akshoy-deuri"><i class="ti-linkedin"></i></a></li>
+                            <li><a href="https://github.com/akshoy1997"><i class="ti-github"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id corrupti architecto consequuntur, laborum quaerat sed nemo temporibus unde, beatae vel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p>&copy;Copyright 2019 All rights reserved. This template is made with <i class="ti-heart" aria-hidden="true"></i> by &nbsp<a href="https://www.facebook.com/akshay.deuri.75">AKSHAY</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
