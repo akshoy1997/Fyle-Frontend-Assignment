@@ -9,10 +9,10 @@ Video of Template Flow.mp4 -> a video showing the working of the template <br/>
 README.md -> instructions and information of the repository
 
 # Folders
-css folder -> additional stylesheets <br/>
-js folder -> additional javascript files and vendor files <br/>
-images folder -> all the images used in the template <br/>
-fonts folder -> all the fonts used in the template <br/>
+css -> additional stylesheets <br/>
+js -> additional javascript files and vendor files <br/>
+images -> all the images used in the template <br/>
+fonts -> all the fonts used in the template <br/>
 
 # Screenshots
 ![Screenshot (137)](https://user-images.githubusercontent.com/30414667/56848990-43d3f880-690c-11e9-9f5c-fdf74db61a0d.png)
